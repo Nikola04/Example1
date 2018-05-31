@@ -1,0 +1,123 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+.letra {
+    font-family: 'Alex Brush', cursive;
+    font-size: 2.5em;
+    color: white;
+    list-style: none;
+}
+.letra01 {
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-align: center;
+    color: white;
+}
+
+.letra02 {
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+
+nav {
+    background: #7C7C7C;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav>div {
+    height: 50px;
+}
+
+nav>div>ul {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+nav>div>ul li {
+    display: table-cell;
+}
+
+/* Submenu */
+
+nav>div>ul>li:hover>ul {
+    display: block;
+    height: 100%;
+}
+
+nav>div>ul>li>ul {
+    display: block;
+    position: absolute;
+    background: #7c7c7c;
+    left: 0%;
+    right: 100%;
+    z-index: 1;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav div>ul li a {
+    color: #fff;
+    display: block;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav div>ul li a:hover {
+    list-style: none;
+    text-decoration: none;
+}
+
+nav>div>ul>li>ul>li a:hover {
+    background: #85c8d1;
+}
+
+nav>div>ul>li>a span {
+    background: white;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -68px;
+    right: 0px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav>div>ul>li>a span .icon {
+    background: #85C8D1;
+    display: block;
+    line-height: 60px;
+}
+
+nav>div>ul>li>a:hover>span {
+    top: 0;
+}
+
+/* FOOTER */
+
+
+.img-footer {
+    display: inline;
+    text-align: center;
+}
